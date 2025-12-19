@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Nano</title>
+    <meta name="description" content="Tapez les cibles avant qu'elles disparaissent ! Plus ça avance, plus les cibles deviennent rapides et petites.">
+    <!-- Open Graph / Twitter preview -->
+    <meta property="og:title" content="Tap Nano">
+    <meta property="og:description" content="Tapez les cibles avant qu'elles disparaissent ! Plus ça avance, plus les cibles deviennent rapides et petites.">
+    <!-- Unsplash image for card preview -->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=800&q=80">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="scoreboard">
+            <span>Score : <span id="score">0</span></span>
+            <span>Temps : <span id="time">20</span>s</span>
+        </div>
+        <canvas id="game-canvas" width="320" height="480"></canvas>
+        <div id="start-overlay" class="overlay">
+            <h1>Tap Nano</h1>
+            <p>Tapez sur les cercles avant qu'ils disparaissent. Plus la partie avance, plus les cibles sont rapides et petites !</p>
+            <button id="start-button">Démarrer</button>
+        </div>
+        <div id="end-overlay" class="overlay">
+            <h1>Fin de la partie</h1>
+            <p>Score final : <span id="final-score">0</span></p>
+            <div class="buttons">
+                <button id="restart-button">Rejouer</button>
+                <button id="share-button">Partager mon score</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
